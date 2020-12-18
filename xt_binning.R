@@ -1,7 +1,7 @@
 library("rjson")
 library("dplyr")
 
-result <- fromJSON(file = "C:\\code_repository\\python_files\\ExpectedPossessionValue\\expected_threat.json")
+result <- fromJSON(file = "expected_threat.json")
 result <- array(unlist(L), dim = c(8, 12))
 
 df <- data.frame(matrix(runif(400), ncol=4))*100
