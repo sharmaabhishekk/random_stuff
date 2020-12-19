@@ -3,7 +3,7 @@ library("dplyr")
 library(ggplot)
 library(ggsoccer)
 
-data <- fromJSON(file = "C:\\code_repository\\python_files\\ExpectedPossessionValue\\expected_threat.json")
+data <- fromJSON(file = "expected_threat.json")
 data <- t(array(unlist(data), dim = c(12, 8))) ###this is where the error was, the xt data was being read in the wrong dimensions
 
 df <- data.frame(matrix(runif(400), ncol=4))*100
